@@ -1,0 +1,3 @@
+dataset_path: /data/privacyGroup/liujunxu/flamby/datasets/fed_heart_disease/dataset_creation_scripts/heart_disease_dataset
+download_complete: true
+preprocessing_complete: true

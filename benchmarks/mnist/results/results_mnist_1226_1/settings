@@ -1,0 +1,8 @@
+SETTINGS = {
+    "ThreeLevels": [[[0.7,0.2,0.1], [0.1, 1.0, 5.0]]],
+    "BoundedPareto": [[4, 0.1]], 
+    "BoundedMixGauss": [[[0.7,0.2,0.1], [(0.1, 0.05), (1.0, 0.1), (5.0, 0.5)]]],
+}
+MIN_EPSILON, MAX_EPSILON = 0.1, 10.0
+nm: 10.0
+iid_10

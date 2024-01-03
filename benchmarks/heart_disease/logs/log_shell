@@ -1,0 +1,5 @@
+nohup: ignoring input
+expr: non-integer argument
+{0..4}
+
+python heart_disease_rpdp_fed.py --outdir ./results/results_heart_disease_1224_3 --seed 
