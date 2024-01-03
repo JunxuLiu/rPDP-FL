@@ -1,0 +1,13 @@
+{
+    "dataset": "fed_heart_disease",
+    "results_file": "results_heart_disease.csv",
+    "strategies": {
+        "FedAvg": {
+            "learning_rate": 0.001,
+            "optimizer_class": "torch.optim.SGD",
+            "dp_target_epsilon": 1.0,
+            "dp_target_delta": 1e-5,
+            "dp_max_grad_norm": 1.0
+        }
+    }
+}
