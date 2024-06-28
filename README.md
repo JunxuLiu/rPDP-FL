@@ -1,5 +1,8 @@
-# About this project
+# rPDP-FL: Record-level Personalized Differentially Private Federated Learning
 
+Code for CCS'24 paper: [Cross-silo Federated Learning with Record-level Personalized Differential Privacy](https://arxiv.org/pdf/2401.16251).
+
+## Introduction
 This open-source research library `myopacus` is an extension to the [Opacus](https://github.com/pytorch/opacus) library for training private models with **record-level personalized differential privacy (rPDP)** under the **federated learning** framework, where individual participants are allowed to set personalized, non-uniform privacy budgets that reflect their personal privacy preferences. 
 
 We devise a novel framework named **rPDP-FL**, employing a two-stage hybrid sampling scheme with both *uniform client-level sampling* and *non-uniform record-level sampling* to accommodate varying privacy requirements. 
