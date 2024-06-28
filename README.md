@@ -1,4 +1,4 @@
-# rPDP-FL: Record-level Personalized Differentially Private Federated Learning
+# rPDP-FL: Cross-silo Federated Learning with Record-level Personalized Differential Privacy
 
 Code for CCS'24 paper: [Cross-silo Federated Learning with Record-level Personalized Differential Privacy](https://arxiv.org/pdf/2401.16251).
 
