@@ -1,0 +1,47 @@
+save_dir: experiments/results/fed_heart_disease
+# dataset info
+dataset_dir: experiments/datasets/heart_disease
+num_labels: 2
+# for fedavg experiments
+fedavg:
+  num_clients: 4
+  num_steps: 50
+  num_rounds: 15
+  client_rate: 1.0
+  batch_size: 16
+  learning_rate: 0.005
+dpfedavg:
+  learning_rate: 0.005
+  max_grad_norm: 1.0
+  max_physical_batch_size: 128
+  target_epsilon: 5.0
+  target_delta: 0.0001
+rpdpfedavg:
+  max_epsilon: 10.0
+  min_epsilon: 0.1
+  settings: {
+      ThreeLevels: [
+          [[0.7,0.2,0.1], [0.1, 1.0, 5.0]]
+        ],
+      BoundedPareto: [
+          [4, 0.1]
+        ], 
+      BoundedMixGauss: [
+          [[0.7,0.2,0.1], [[0.1, 0.05], [1.0, 0.1], [5.0, 0.5]]]
+        ],
+    }
+# for sgd experiments
+sgd:
+  num_epochs: 3
+  batch_size: 32
+  learning_rate: 0.01
+  logging_interval: 1
+dpsgd:
+  num_steps: 100
+  learning_rate: 0.05
+  target_epsilon: 1.0
+  target_delta: 0.0001
+  max_grad_norm: 1.0
+  max_physical_batch_size: 128
+rpdpsgd:
+  learning_rate: 0.005

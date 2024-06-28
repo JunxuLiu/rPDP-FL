@@ -1,0 +1,5 @@
+nohup: ignoring input
+python fedavg_rpdp.py --dataset snli --seed 43 --gpuid 4
+python fedavg_rpdp.py --dataset snli --seed 44 --gpuid 5
+python fedavg_rpdp.py --dataset snli --seed 45 --gpuid 6
+python fedavg_rpdp.py --dataset snli --seed 46 --gpuid 7

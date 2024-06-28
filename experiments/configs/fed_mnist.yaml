@@ -1,0 +1,50 @@
+save_dir: experiments/results/fed_mnist
+# dataset info
+dataset_dir:
+  non-iid: experiments/datasets/fed_mnist/niid_10_5way_1200shot
+  iid_10: experiments/datasets/fed_mnist/iid_10
+  iid_50: experiments/datasets/fed_mnist/iid_50
+num_labels: 10
+# for fedavg experiments
+fedavg:
+  num_clients: 10
+  num_steps: 50
+  num_rounds: 15
+  client_rate: 0.5
+  batch_size: 128
+  learning_rate: 0.01
+dpfedavg:
+  learning_rate: 0.01
+  max_grad_norm: 1.0
+  max_physical_batch_size: 128
+  target_epsilon: 5.0
+  target_delta: 0.001
+rpdpfedavg:
+  max_epsilon: 10.0
+  min_epsilon: 0.1
+  settings: {
+      ThreeLevels: [
+          [[0.7,0.2,0.1], [0.1, 1.0, 5.0]]
+        ],
+      BoundedPareto: [
+          [4, 0.1]
+        ], 
+      BoundedMixGauss: [
+          [[0.7,0.2,0.1], [[0.1, 0.05], [1.0, 0.1], [5.0, 0.5]]]
+        ],
+    }
+# for sgd experiments
+sgd:
+  num_epochs: 10
+  learning_rate: 0.0005
+  batch_size: 128
+  logging_interval: 50
+dpsgd:
+  num_steps: 750
+  learning_rate: 0.0005
+  target_epsilon: 1.0
+  target_delta: 0.0001
+  max_grad_norm: 1.2
+  max_physical_batch_size: 128
+rpdpsgd:
+  learning_rate: 0.005
